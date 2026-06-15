@@ -15,7 +15,7 @@ Open a terminal and run `git clone` command
 git clone "url you copied"
 ```
 
-> [!IMPORTANT]
+> \[!IMPORTANT]
 > In the following steps, when you see `<your-github-id>` your should replace it with your GitHub ID.  
 > For example, if your GitHub ID is `aaronsw`,  
 > `git switch -c add-<your-github-id>` becomes `git switch -c add-aaronsw`  
@@ -38,11 +38,13 @@ git switch -c add-<your-github-id>
 ```
 
 
+
 ## Create your card
 
 You can add your card as an HTML file in contributors directory. Create a file with your username in contributors directory. You can copy the following template to get started.
 
 `contributors/<your-github-id>.html`
+
 ```html
 <article>
   <h3>Your username</h3>
@@ -88,13 +90,15 @@ You can add your card as an HTML file in contributors directory. Create a file w
 </style>
 
 ```
+
 ## Add your card to contributors list
 
 Add the name of the file you created to `scripts/contributors.js` file.
 
 `scripts/contributors.js`
+
 ```js
-const contributorFiles = [
+const contributorFiles = \[
   "<your-github-id>.html", // add your file name here
   "roshanjossey.html",
   "gokultp.html",
@@ -105,7 +109,7 @@ const contributorFiles = [
 
 You can see your changes by opening `index.html` in a web browser. You should be able to see the new card you added in the previous steps.
 
-You can continue making changes to your card and refresh the web browser tab to see those changes.
+You can continue making changes to your card and refresh the web browser tab to see those changes. The index will 
 
 ## Commit your changes
 
@@ -129,7 +133,7 @@ git push -u origin add-<your-github-id>
 
 ## Submit your changes for review
 
-If you go to your repository on GitHub, you'll see a `Compare & pull request` button. Click on that button.
+If you go to your repository on GitHub, you'll see a `Compare \& pull request` button. Click on that button.
 
 <img style="float: right;" src="https://firstcontributions.github.io/assets/Readme/compare-and-pull.png" alt="create a pull request" />
 
@@ -138,3 +142,4 @@ Now submit the pull request.
 <img style="float: right;" src="https://firstcontributions.github.io/assets/Readme/submit-pull-request.png" alt="submit pull request" />
 
 You will get a notification email once the changes have been merged.
+
